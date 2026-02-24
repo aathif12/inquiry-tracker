@@ -16,7 +16,7 @@
                 <div class="flex justify-between h-16">
                     <div class="flex">
                         <div class="-ml-2 mr-2 flex items-center">
-                            <h1 class="text-white text-xl font-bold">E Zone IT Solutions - Inquiry Tracker</h1>
+                            <h1 class="text-white text-xl font-bold">Inquiry Tracker</h1>
                         </div>
                     </div>
                 </div>

@@ -1,59 +1,87 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Service Inquiry Tracker
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A professional and responsive web application built with Laravel and Tailwind CSS to manage and track client service inquiries efficiently. 
 
-## About Laravel
+##  Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Create Inquiries**: Clients or staff can easily log new service inquiries via a simple, intuitive form.
+- **Track Inquiries**: A clean and organized dashboard displays all submitted inquiries in a tabular format.
+- **Service Categories**: Pre-defined services like Web Development, VPS Hosting, Network Solutions, and IT Support.
+- **Status Management**: Instantly see the status of new inquiries.
+- **Secure**: Built-in CSRF protection and form validation.
+- **Responsive Design**: Mobile-friendly layout using Tailwind CSS.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+##  Technology Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Backend**: Laravel 11 (PHP)
+- **Frontend**: Blade Templating Engine, Tailwind CSS
+- **Database**: SQLite / MySQL (Configurable via `.env`)
 
-## Learning Laravel
+##  Screenshots
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Here are some previews of the application in action:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 1. Dashboard / Inquiry List
+![Inquiry Dashboard](ScreenShots/Screenshot%20(148).png)
 
-## Laravel Sponsors
+### 2. Create Inquiry Form
+![Create Inquiry](ScreenShots/Screenshot%20(149).png)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 3. Application View
+![Application Interface](ScreenShots/Screenshot%20(150).png)
 
-### Premium Partners
+##  Installation & Setup
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Follow these steps to get the project running on your local machine:
 
-## Contributing
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd ezone-inquiry-tracker
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. **Install PHP dependencies:**
+   ```bash
+   composer install
+   ```
 
-## Code of Conduct
+3. **Install Frontend dependencies:**
+   ```bash
+   npm install
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. **Environment Setup:**
+   Copy the example environment file and configure your database settings.
+   ```bash
+   cp .env.example .env
+   ```
 
-## Security Vulnerabilities
+5. **Generate Application Key:**
+   ```bash
+   php artisan key:generate
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6. **Run Database Migrations:**
+   ```bash
+   php artisan migrate
+   ```
 
-## License
+7. **Compile Frontend Assets:**
+   ```bash
+   npm run build
+   ```
+   *(Or run `npm run dev` for hot-reloading during development)*
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+8. **Start the Development Server:**
+   ```bash
+   php artisan serve
+   ```
+   The application will be available at `http://localhost:8000`.
+
+##  Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+##  License
+
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
